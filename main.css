@@ -1,0 +1,260 @@
+/*-------------------------------------------------------------------------------------------------
+General
+-------------------------------------------------------------------------------------------------*/
+* {
+	font-family:Georgia;
+	color:#333;
+}
+
+h1 {	
+	text-align:center;
+	font-size:30px;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+h2 {
+	font-size:24px;
+	margin-top:30px;
+	margin-bottom:5px;
+}
+
+small {
+	font-family:verdana;
+}
+
+h2:first-child {
+	margin-top:0px;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.circular {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+}
+
+input[type=text] {
+	font-size:16px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------------------------------------*/
+input[type=button] {
+  background-color: #7fbf4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: linear-gradient(top, #7fbf4d, #63a62f);
+  border: 1px solid #63a62f;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+  box-shadow: inset 0 1px 0 0 #96ca6d;
+  color: #fff;
+  font: bold 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  padding: 6px 0 6px 0;
+  position:relative;
+  bottom: 300px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #4c9021;
+  width: 100px;
+}
+
+input[type=button]:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer; 
+}
+
+input[type=button]:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}
+
+
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+#wrapper {
+	width:686px;
+	margin:0px auto;
+}
+
+
+
+/* Left column */
+#controls {
+	width: 333px;
+	margin-right:50px;
+	float:left;
+}
+
+/* Right column */
+#preview {
+	width:300px;
+	float:right;
+	text-align:center;
+	margin-top: 50px;
+	}
+
+
+
+
+
+#canvas {
+	width:299px;
+	height:145px;
+	background-color:#000000;
+	
+	clear: both;
+	
+	/* z-index:1; */ /* So we can place the stickers above */
+	
+}
+
+#canvas-tape{
+	width: 299px;
+	height: 10px;
+	background-color: #ffffff;
+	
+	
+	}
+
+#canvas-deck {
+     width: 299px;
+	 height: 145px;
+	 background-color:#000000;
+	 clear: both;
+	 
+	 }
+
+#hull-color {
+	width: 280px;
+	height: 20px;
+	font-family:"Lato",Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:16px;
+	position:relative;
+	bottom: 280px;
+	padding: 5px;
+	}	
+	
+	#deck-color {
+	width: 280px;
+	height: 20px;
+	font-family:"Lato",Arial, Helvetica, sans-serif;
+	color:#000000;
+	position:relative;
+	bottom: 280px;
+	font-size:16px;
+	padding: 5px;
+	}	
+	
+	#tape-color {
+	width: 280px;
+	height: 20px;
+	font-family:"Lato",Arial, Helvetica, sans-serif;
+	color:#000000;
+	position:relative;
+	bottom: 280px;
+	font-size:16px;
+	padding: 5px;
+	}	
+	
+	 
+	 
+#boat-image {
+	width: 300px;
+	height: 300px;	 
+	background-image: url('../images/circle.png');
+	position: relative;
+	top: -300px;
+	
+	}
+
+
+
+	
+	.colors{
+	width: 30px;
+	height: 30px;
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+	border: 1px gray solid;
+			}
+			
+				
+			
+	.dcolors{
+	width: 30px;
+	height: 30px;
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+	border: 1px gray solid;
+			}		
+	
+		
+			#Off-White-Revisited {background-color:fbfdfb;}
+            #Cream {background-color:#eee4d0;}
+		    #Kingston-Grey {background-color:#abb5b8;}
+            #Forest-Green {background-color:#33574b;}
+            #Kelly-Green {background-color:#296b3f;}
+            #Navy {background-color:#033f78;}
+            #Empress-Blue {background-color:#afdae8;}
+            #Stars-Stripes-Blue {background-color:#081b3e;}
+            #Ice-Blue {background-color:#d7e9eb;}
+            #New-Teal {background-color:#007279;}
+            #Sky-Blue {background-color:#70a9c3;}
+            #Vivid-Red {background-color:#c4050a;}
+            #International-Orange {background-color:#ff472b;}
+			
+			/* Tape  Colors */
+			#White {background-color:#FFFFFF; }
+			#Black  {background-color:#000000;}
+			#Green {background-color:#009966;}
+			#Blue {background-color:#1b5c9a;}
+			#Red{background-color:#FF0000;}
+            
+	
+	.tape {
+	width: 30px;
+	height: 30px;
+	margin: 2px; 
+	float:left;
+	cursor: pointer;
+	border: 1px gray solid;
+	}
+	
+	
+	#results{
+	width:250px;
+	height: auto;
+	}
+	
+	
+	
+	
+
+
+
